@@ -9,8 +9,8 @@ import java.util.UUID;
 @Slf4j
 @Service
 public class BeerServiceImpl implements BeerService {
-    @Override
-    public BeerDto getBeerById() {
+       @Override
+    public BeerDto getBeerById(UUID id) {
         return BeerDto.builder()
                 .id(UUID.randomUUID())
                 .beerName("Galaxy Cat")

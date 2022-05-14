@@ -5,7 +5,7 @@ import guru.springframework.msbrewery.web.model.BeerDto;
 import java.util.UUID;
 
 public interface BeerService {
-    BeerDto getBeerById();
+    BeerDto getBeerById(UUID id);
 
     BeerDto saveNewBeer(BeerDto beerDto);
 
